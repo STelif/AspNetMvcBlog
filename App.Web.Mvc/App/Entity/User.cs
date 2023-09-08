@@ -13,7 +13,7 @@ namespace App.Web.Mvc.App.Entity
         [Required(ErrorMessage ="{0} boş geçilemez")]
         [DisplayName("Kullanıcı Adı")]
         [StringLength(30,ErrorMessage ="{0} enfazla {1} karakterden oluşmalı")]
-        [MinLength(3,ErrorMessage ="{0} en az {2} karakterden oluşmalı")]
+        [MinLength(3,ErrorMessage ="{0} en az {1} karakterden oluşmalı")]
         public string UserName { get; set; }
         [EmailAddress]
         [Required(ErrorMessage ="boş geçilemez")]
@@ -21,7 +21,7 @@ namespace App.Web.Mvc.App.Entity
         [Required(ErrorMessage ="{0} boş geçilemez")]
         [DisplayName("Şifre")]
         [StringLength(16, ErrorMessage = "{0} enfazla {1} karakterden oluşmalı")]
-        [MinLength(8, ErrorMessage = "{0} en az {2} karakterden oluşmalı")]
+        [MinLength(8, ErrorMessage = "{0} en az {1} karakterden oluşmalı")]
         public string Password { get; set; }
     }
 }

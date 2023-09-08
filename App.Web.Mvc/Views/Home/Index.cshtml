@@ -2,7 +2,10 @@
     Layout = "_layout";
 }
 
-<partial name="_Slider"/>
+@await Component.InvokeAsync("Slider")
+
+@*<partial name="_Slider"/>*@
+
 <partial name="_Articles"/>
 
 
