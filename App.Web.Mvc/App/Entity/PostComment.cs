@@ -13,7 +13,7 @@ namespace App.Web.Mvc.App.Entity
         [Required(ErrorMessage = "{0} boş geçilemez")]
         [DisplayName("Yorum İçeriği")]
         [StringLength(100, ErrorMessage = "{0} enfazla {1} karakterden oluşmalı")]
-        [MinLength(1, ErrorMessage = "{0} en az {2} karakterden oluşmalı")]
+        [MinLength(1, ErrorMessage = "{0} en az {1} karakterden oluşmalı")]
         public string Yorum { get; set; }
         public int PostId { get; set; }
         public Post Post { get; set; }

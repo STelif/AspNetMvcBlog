@@ -13,7 +13,7 @@ namespace App.Web.Mvc.App.Entity
         [Required(ErrorMessage = "{0} boş geçilemez")]
         [DisplayName("Post Başlık")]
         [StringLength(25, ErrorMessage = "{0} enfazla {1} karakterden oluşmalı")]
-        [MinLength(3, ErrorMessage = "{0} en az {2} karakterden oluşmalı")]
+        [MinLength(3, ErrorMessage = "{0} en az {1} karakterden oluşmalı")]
         public string PostTitle { get; set; }
 
         public int UserId { get; set; }
