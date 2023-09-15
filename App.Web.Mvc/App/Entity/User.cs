@@ -22,6 +22,7 @@ namespace App.Web.Mvc.App.Entity
         [DisplayName("Şifre")]
         [StringLength(16, ErrorMessage = "{0} enfazla {1} karakterden oluşmalı")]
         [MinLength(8, ErrorMessage = "{0} en az {1} karakterden oluşmalı")]
+        [PasswordPropertyText]
         public string Password { get; set; }
     }
 }
